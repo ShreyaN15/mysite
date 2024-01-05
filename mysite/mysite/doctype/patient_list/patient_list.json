@@ -9,7 +9,8 @@
  "field_order": [
   "name1",
   "age",
-  "phone"
+  "phone",
+  "no_of_visits"
  ],
  "fields": [
   {
@@ -26,11 +27,16 @@
    "fieldname": "phone",
    "fieldtype": "Phone",
    "label": "Phone"
+  },
+  {
+   "fieldname": "no_of_visits",
+   "fieldtype": "Int",
+   "label": "No. of visits"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-01-05 14:59:52.308107",
+ "modified": "2024-01-05 21:01:40.017626",
  "modified_by": "Administrator",
  "module": "Mysite",
  "name": "Patient List",

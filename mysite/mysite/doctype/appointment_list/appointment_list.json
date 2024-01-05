@@ -8,7 +8,9 @@
  "engine": "InnoDB",
  "field_order": [
   "patient_name",
-  "age"
+  "age",
+  "date",
+  "no_of_visits"
  ],
  "fields": [
   {
@@ -22,11 +24,22 @@
    "fieldname": "age",
    "fieldtype": "Int",
    "label": "Age"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fetch_from": "patient_name.no_of_visits",
+   "fieldname": "no_of_visits",
+   "fieldtype": "Data",
+   "label": "No. of visits"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-01-05 15:05:40.631941",
+ "modified": "2024-01-05 21:03:22.310802",
  "modified_by": "Administrator",
  "module": "Mysite",
  "name": "Appointment List",
