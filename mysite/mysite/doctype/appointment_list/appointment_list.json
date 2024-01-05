@@ -1,39 +1,35 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2024-01-04 23:04:04.191320",
+ "creation": "2024-01-05 14:49:26.235722",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "name1",
-  "age",
-  "phone"
+  "patient_name",
+  "age"
  ],
  "fields": [
   {
-   "fieldname": "name1",
-   "fieldtype": "Data",
-   "label": "Name"
+   "fieldname": "patient_name",
+   "fieldtype": "Link",
+   "label": "patient name",
+   "options": "Patient List"
   },
   {
+   "fetch_from": "patient_name.age",
    "fieldname": "age",
    "fieldtype": "Int",
    "label": "Age"
-  },
-  {
-   "fieldname": "phone",
-   "fieldtype": "Phone",
-   "label": "Phone"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-01-05 14:59:52.308107",
+ "modified": "2024-01-05 15:05:40.631941",
  "modified_by": "Administrator",
  "module": "Mysite",
- "name": "Patient List",
+ "name": "Appointment List",
  "owner": "Administrator",
  "permissions": [
   {
@@ -49,9 +45,7 @@
    "write": 1
   }
  ],
- "show_title_field_in_link": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": [],
- "title_field": "name1"
+ "states": []
 }
