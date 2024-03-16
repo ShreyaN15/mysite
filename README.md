@@ -1,6 +1,6 @@
 ## Mysite
 
-newapp
+new app 
 
 #### License
 
